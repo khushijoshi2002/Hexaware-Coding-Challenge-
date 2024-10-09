@@ -1,10 +1,14 @@
+import os, sys
+dir_path = os.path.dirname(os.path.realpath(__file__))
+parent_dir_path = os.path.abspath(os.path.join(dir_path, os.pardir))
+sys.path.insert(0, parent_dir_path)
 from entity.JobListing import JobListing
 from entity.Company import Company
 from entity.Applicant import Applicant
 from entity.JobApplication import JobApplication
 from DatabaseManager import DatabaseManager
 from datetime import datetime
-import sys
+
 
 
 def main_menu():
